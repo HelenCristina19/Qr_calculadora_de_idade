@@ -1,3 +1,4 @@
+/* Configurações iniciais padrão*/
 
 * {
   margin: 0;
@@ -22,6 +23,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+.main_title {  /*titulo principal*/
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(199, 171, 80);
+}
+
+/*definindo cores, mensagens, dados pessoais de idade, etc */
 html,
 body {
   min-height: 100vh;
@@ -142,7 +152,6 @@ button {
   right: 0;
   bottom: 0;
   transform: translate(0, 50%);
-
   width: 52px;
   height: 52px;
   padding: 12px;
@@ -199,9 +208,15 @@ button > img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 330px) {
   button {
     right: 50%;
     transform: translate(50%, 50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 16px;
   }
 }
